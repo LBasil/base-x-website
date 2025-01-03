@@ -1,11 +1,11 @@
 <template>
   <section id="games" class="games py-5">
     <div class="container">
-      <h2 class="section-title text-center mb-5 text-neon">Our Games</h2>
-      <div class="row">
-        <div v-for="game in games" :key="game.id" class="col-md-4">
-          <div class="game-card shadow">
-            <img :src="game.image" :alt="game.name" class="img-fluid" />
+      <h2 class="text-center text-glow">Our Games</h2>
+      <div class="row mt-4">
+        <div v-for="game in games" :key="game.id" class="col-md-4 mb-4">
+          <div class="game-card p-3">
+            <img :src="game.image" :alt="game.name" class="img-fluid rounded">
             <h3 class="mt-3">{{ game.name }}</h3>
             <p>{{ game.description }}</p>
           </div>
@@ -21,40 +21,31 @@ export default {
   data() {
     return {
       games: [
-        { id: 1, name: 'Game 1', description: 'An epic adventure.', image: 'game1.jpg' },
-        { id: 2, name: 'Game 2', description: 'Explore the unknown.', image: 'game2.jpg' },
-        { id: 3, name: 'Game 3', description: 'A journey through time.', image: 'game3.jpg' }
-      ]
+        { id: 1, name: 'Game 1', description: 'An epic adventure.', image: '/assets/game1.jpg' },
+        { id: 2, name: 'Game 2', description: 'Explore the unknown.', image: '/assets/game2.jpg' },
+        { id: 3, name: 'Game 3', description: 'A journey through time.', image: '/assets/game3.jpg' },
+      ],
     };
-  }
+  },
 };
 </script>
 
 <style scoped>
 .games {
   background: #0d1117;
-  color: #fff;
+  color: #ffffff;
 }
-
-.section-title {
-  font-size: 2rem;
-  color: #58a6ff;
-}
-
 .game-card {
-  background: #1a1a1a;
-  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #00d9ff;
   border-radius: 10px;
-  text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .game-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px #58a6ff;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00d9ff;
 }
-
-.game-card img {
-  border-radius: 5px;
+.game-card h3 {
+  color: #00d9ff;
 }
 </style>

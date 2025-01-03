@@ -1,8 +1,8 @@
 <template>
-  <section id="home" class="home d-flex flex-column justify-content-center align-items-center">
-    <h1 class="text-glow">Welcome to BaseX</h1>
-    <p class="tagline">Explore the future of gaming in an advanced human era.</p>
-    <button class="btn btn-primary btn-lg mt-4">Get Started</button>
+  <section id="home" class="home vh-100 d-flex flex-column justify-content-center align-items-center">
+    <h1 class="text-center text-glow">Welcome to BaseX</h1>
+    <p class="text-center lead">Explore the future of gaming in an advanced human era.</p>
+    <button class="btn btn-neon mt-4">Get Started</button>
   </section>
 </template>
 
@@ -14,32 +14,27 @@ export default {
 
 <style scoped>
 .home {
-  height: 100vh;
-  background: radial-gradient(circle, #020202, #0d1117);
-  color: #fff;
+  background: url('../assets/stars-bg.gif') center/cover no-repeat;
+  color: #ffffff;
   text-align: center;
-  animation: backgroundMove 15s infinite;
+  position: relative;
 }
-
 .text-glow {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #58a6ff;
-  text-shadow: 0 0 10px #58a6ff, 0 0 20px #58a6ff;
+  font-size: 2.5rem;
+  color: #00d9ff;
+  text-shadow: 0 0 5px #00d9ff, 0 0 20px #00d9ff;
 }
-
-.tagline {
+.btn-neon {
+  background: linear-gradient(90deg, #00d9ff, #0047ab);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
   font-size: 1.2rem;
-  margin-top: 15px;
-  color: #ccc;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #00d9ff;
+  transition: box-shadow 0.3s;
 }
-
-@keyframes backgroundMove {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
+.btn-neon:hover {
+  box-shadow: 0 0 20px #00d9ff, 0 0 40px #00d9ff;
 }
 </style>

@@ -1,13 +1,13 @@
 <template>
-  <header class="header glass-effect">
+  <header class="header fixed-top">
     <div class="container d-flex justify-content-between align-items-center">
-      <div class="logo text-neon">BaseX</div>
+      <div class="logo text-glow">BaseX</div>
       <nav class="navigation">
-        <ul class="d-flex list-unstyled m-0">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#games">Games</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="d-flex gap-4">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#games" class="nav-link">Games</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -22,38 +22,34 @@ export default {
 
 <style scoped>
 .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 15px 30px;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 0;
+  z-index: 999;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
-
 .logo {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: bold;
-  color: #58a6ff;
-  text-shadow: 0 0 5px #58a6ff, 0 0 10px #58a6ff;
+  color: #00d9ff;
+  animation: neon-blink 1.5s infinite alternate;
 }
-
-.navigation ul {
-  display: flex;
-  gap: 15px;
-}
-
-.navigation a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1rem;
+.nav-link {
+  color: #ffffff;
+  text-transform: uppercase;
   font-weight: bold;
-  transition: color 0.3s, transform 0.3s;
+  transition: color 0.3s;
 }
-
-.navigation a:hover {
-  color: #58a6ff;
-  transform: scale(1.1);
+.nav-link:hover {
+  color: #00d9ff;
+  text-shadow: 0 0 5px #00d9ff;
+}
+@keyframes neon-blink {
+  0% {
+    text-shadow: 0 0 5px #00d9ff, 0 0 10px #00d9ff;
+  }
+  100% {
+    text-shadow: 0 0 20px #00d9ff, 0 0 40px #00d9ff;
+  }
 }
 </style>
