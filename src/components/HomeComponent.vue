@@ -1,8 +1,8 @@
 <template>
   <section id="home" class="home vh-100 d-flex flex-column justify-content-center align-items-center">
-    <h1 class="text-center text-glow">Welcome to BaseX</h1>
-    <p class="text-center lead">Explore the future of gaming in an advanced human era.</p>
-    <button class="btn btn-neon mt-4">Get Started</button>
+    <h1 class="text-center text-glow">{{ $t('home.welcome') }}</h1>
+    <p class="text-center lead">{{ $t('home.explore') }}</p>
+    <button class="btn btn-neon mt-4">{{ $t('home.get_started') }}</button>
   </section>
   <GamesComponent />
 </template>

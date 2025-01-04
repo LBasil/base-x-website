@@ -4,8 +4,8 @@
       <p>&copy; 2025 BaseX. All rights reserved.</p>
       <nav class="footer-nav">
         <ul class="d-flex justify-content-center gap-4">
-          <li><a href="#privacy" class="footer-link">Privacy Policy</a></li>
-          <li><a href="#terms" class="footer-link">Terms of Service</a></li>
+          <li><a href="#privacy" class="footer-link">{{ $t('footer.privacy_policy') }}</a></li>
+          <li><a href="#terms" class="footer-link">{{ $t('footer.terms_of_service') }}</a></li>
         </ul>
       </nav>
     </div>

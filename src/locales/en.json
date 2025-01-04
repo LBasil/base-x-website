@@ -1,0 +1,22 @@
+{
+  "header": {
+    "home": "Home",
+    "games": "Games",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "footer": {
+      "privacy_policy": "Privacy policy",
+      "terms_of_service": "Terms of service"
+  },
+  "home": {
+    "welcome": "Welcome to BaseX",
+    "explore": "Explore the future of gaming in an advanced human era.",
+    "get_started": "Get started"
+  },
+  "games": {
+    "game_title": "Our games"
+  }
+}
+  
+  

@@ -1,7 +1,7 @@
 <template>
   <section id="games" class="games py-5">
     <div class="container">
-      <h2 class="text-center text-glow">Our Games</h2>
+      <h2 class="text-center text-glow">{{ $t('games.game_title') }}</h2>
       <div class="row mt-4">
         <div v-for="game in games" :key="game.id" class="col-md-4 mb-4">
           <div class="game-card p-3">

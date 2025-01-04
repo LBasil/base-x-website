@@ -1,10 +1,7 @@
 <template>
   <header class="header fixed-top">
     <div class="container d-flex justify-content-between align-items-center">
-      <!-- Logo -->
       <div class="logo text-glow">BaseX</div>
-
-      <!-- Toggle button for mobile view -->
       <button
         class="navbar-toggler d-md-none"
         type="button"
@@ -16,23 +13,28 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Navigation links -->
       <nav class="collapse navbar-collapse d-md-flex justify-content-end" id="navbarNav">
         <ul class="d-flex flex-column flex-md-row gap-3 align-items-center">
-          <li><a href="/" class="nav-link">Home</a></li>
-          <li><a href="#games" class="nav-link">Games</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="/" class="nav-link">{{ $t('header.home') }}</a></li>
+          <li><a href="#games" class="nav-link">{{ $t('header.games') }}</a></li>
+          <li><a href="#about" class="nav-link">{{ $t('header.about') }}</a></li>
+          <li><a href="#contact" class="nav-link">{{ $t('header.contact') }}</a></li>
+          <LanguageSwitcherComponent />
         </ul>
       </nav>
     </div>
   </header>
 </template>
 
+
 <script>
+import LanguageSwitcherComponent from './LanguageSwitcherComponent.vue';
+
 export default {
   name: 'HeaderComponent',
+  components: {
+    LanguageSwitcherComponent
+  }
 };
 </script>
 
