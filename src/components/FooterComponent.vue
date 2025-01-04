@@ -19,6 +19,11 @@ export default {
 </script>
 
 <style scoped>
+
+ul {
+  list-style-type: none;
+}
+
 .footer {
   background: #000000;
   color: #ffffff;

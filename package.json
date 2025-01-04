@@ -18,7 +18,8 @@
     "simplebar": "^6.3.0",
     "swiper": "^8.4.7",
     "vue": "^3.2.13",
-    "vue-awesome-swiper": "^5.0.1"
+    "vue-awesome-swiper": "^5.0.1",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

@@ -8,6 +8,14 @@
             <img :src="game.image" :alt="game.name" class="img-fluid rounded">
             <h3 class="mt-3">{{ game.name }}</h3>
             <p>{{ game.description }}</p>
+            <!-- Ajout du lien vers la page du jeu -->
+            <router-link
+              v-if="game.id === 1"
+              :to="'/rushx'"
+              class="btn btn-outline-primary mt-2"
+            >
+              Explore {{ game.name }}
+            </router-link>
           </div>
         </div>
       </div>
@@ -21,9 +29,24 @@ export default {
   data() {
     return {
       games: [
-        { id: 1, name: 'Game 1', description: 'An epic adventure.', image: '/assets/game1.jpg' },
-        { id: 2, name: 'Game 2', description: 'Explore the unknown.', image: '/assets/game2.jpg' },
-        { id: 3, name: 'Game 3', description: 'A journey through time.', image: '/assets/game3.jpg' },
+        {
+          id: 1,
+          name: 'RushX',
+          description: 'Survive the ultimate scientific experiment.',
+          image: '/assets/game1.jpg',
+        },
+        {
+          id: 2,
+          name: 'Game 2',
+          description: 'Explore the unknown.',
+          image: '/assets/game2.jpg',
+        },
+        {
+          id: 3,
+          name: 'Game 3',
+          description: 'A journey through time.',
+          image: '/assets/game3.jpg',
+        },
       ],
     };
   },

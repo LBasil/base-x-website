@@ -4,11 +4,17 @@
     <p class="text-center lead">Explore the future of gaming in an advanced human era.</p>
     <button class="btn btn-neon mt-4">Get Started</button>
   </section>
+  <GamesComponent />
 </template>
 
 <script>
+import GamesComponent from './GamesComponent.vue';
+
 export default {
   name: 'HomeComponent',
+  components: {
+    GamesComponent
+  },
 };
 </script>
 

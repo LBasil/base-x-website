@@ -1,32 +1,24 @@
 <template>
   <div id="app">
     <HeaderComponent />
-    <HomeComponent />
-    <GamesComponent />
+    <router-view />
     <FooterComponent />
   </div>
 </template>
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
-import HomeComponent from './components/HomeComponent.vue';
-import GamesComponent from './components/GamesComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
-    HomeComponent,
-    GamesComponent,
-    FooterComponent
-  }
+    FooterComponent,
+  },
 };
 </script>
 
 <style>
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-}
+/* Ajoute ici les styles globaux si nécessaires */
 </style>
