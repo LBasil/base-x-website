@@ -19,8 +19,9 @@ export default {
 </script>
 
 <style scoped>
+
 .home {
-  background: url('../assets/stars-bg.gif') center/cover no-repeat;
+  background: url('../assets/stars-bg.jpg') center/cover no-repeat;
   color: #ffffff;
   text-align: center;
   position: relative;
