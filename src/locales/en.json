@@ -15,7 +15,20 @@
     "get_started": "Get started"
   },
   "games": {
-    "game_title": "Our games"
+    "game_title": "Our games",
+    "explore": "Explore",
+    "rushx": {
+      "name": "RushX",
+      "description": "Survive the ultimate scientific experiment."
+    },
+    "game2": {
+      "name": "Game 2",
+      "description": "Explore the unknown."
+    },
+    "game3": {
+      "name": "Game 3",
+      "description": "A journey through time."
+    }
   }
 }
   

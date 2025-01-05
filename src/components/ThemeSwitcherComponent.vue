@@ -61,8 +61,8 @@ export default {
 
 .btn-theme {
   background: none;
-  color: #00d9ff;
-  border: 2px solid #00d9ff;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
   border-radius: 5px;
   font-weight: bold;
   padding: 5px 10px;
@@ -70,28 +70,28 @@ export default {
 }
 
 .btn-theme:hover {
-  background: #00d9ff;
-  color: #000;
-  box-shadow: 0 0 10px #00d9ff;
+  background: var(--secondary-color);
+  color: var(--text-color);
+  box-shadow: 0 0 10px var(--secondary-color);
 }
 
 .dropdown-menu {
-  background: rgba(0, 0, 0, 0.9);
-  border: 1px solid #00d9ff;
+  background: var(--background);
+  border: 1px solid var(--secondary-color);
   border-radius: 8px;
-  box-shadow: 0 0 10px #00d9ff;
+  box-shadow: 0 0 10px var(--secondary-color);
 }
 
 .dropdown-item {
-  color: #ffffff;
+  color: var(--text-color);
   font-weight: bold;
   padding: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .dropdown-item:hover {
-  background: #00d9ff;
-  color: #000;
+  background: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .theme-icon {

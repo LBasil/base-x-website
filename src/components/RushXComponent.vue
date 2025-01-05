@@ -2,7 +2,7 @@
   <div id="rushx-page">
     <HeaderComponent />
 
-    <section class="rushx-hero text-center text-white">
+    <section class="rushx-hero text-center text">
       <div class="container">
         <h1>RushX</h1>
         <p class="lead">Survivez, évoluez, dominez dans un monde impitoyable.</p>
@@ -14,8 +14,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
-            <h2 class="text-white">L'expérience RushX</h2>
-            <p class="text-white">
+            <h2 class="text">L'expérience RushX</h2>
+            <p class="text">
               ...
             </p>
           </div>
@@ -28,7 +28,7 @@
 
     <section class="rushx-trailer text-center py-5">
       <div class="container">
-        <h2 class="text-white">Découvrez le trailer</h2>
+        <h2 class="text">Découvrez le trailer</h2>
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/placeholder" allowfullscreen></iframe>
         </div>
@@ -37,7 +37,7 @@
 
     <section class="rushx-screenshots py-5">
       <div class="container">
-        <h2 class="text-white text-center">Captures d'écran</h2>
+        <h2 class="text text-center">Captures d'écran</h2>
         <div class="row mt-4">
           <div class="col-md-4">
             <img src="/path/to/screenshot1.jpg" alt="Screenshot 1" class="img-fluid rounded mb-4">
@@ -54,11 +54,11 @@
 
     <section class="rushx-updates py-5">
       <div class="container">
-        <h2 class="text-white text-center">Dernières mises à jour</h2>
+        <h2 class="text text-center">Dernières mises à jour</h2>
         <ul class="list-unstyled mt-4">
-          <li class="text-white">[Date] - Ajout d'un nouveau mode de survie.</li>
-          <li class="text-white">[Date] - Amélioration du système d'évolution.</li>
-          <li class="text-white">[Date] - Correction de bugs mineurs.</li>
+          <li class="text">[Date] - Ajout d'un nouveau mode de survie.</li>
+          <li class="text">[Date] - Amélioration du système d'évolution.</li>
+          <li class="text">[Date] - Correction de bugs mineurs.</li>
         </ul>
       </div>
     </section>
@@ -103,5 +103,9 @@ export default {
 
 .rushx-screenshots img:hover {
   transform: scale(1.05);
+}
+
+.text {
+  color: var(--text-color);
 }
 </style>

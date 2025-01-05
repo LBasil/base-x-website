@@ -5,16 +5,14 @@
       <div class="row mt-4">
         <div v-for="game in games" :key="game.id" class="col-md-4 mb-4">
           <div class="game-card p-3">
-            <img :src="game.image" :alt="game.name" class="img-fluid rounded">
-            <h3 class="mt-3">{{ game.name }}</h3>
-            <p>{{ game.description }}</p>
-            <!-- Ajout du lien vers la page du jeu -->
+            <img :src="game.image" :alt=$t(game.name) class="img-fluid rounded">
+            <h3 class="mt-3">{{ $t(game.name) }}</h3>
+            <p>{{ $t(game.description) }}</p>
             <router-link
-              v-if="game.id === 1"
-              :to="'/rushx'"
+              :to="game.href"
               class="btn btn-outline-primary mt-2"
             >
-              Explore {{ game.name }}
+              {{ $t('games.explore') }} {{ $t(game.name) }}
             </router-link>
           </div>
         </div>
@@ -31,22 +29,25 @@ export default {
       games: [
         {
           id: 1,
-          name: 'RushX',
-          description: 'Survive the ultimate scientific experiment.',
+          name: 'games.rushx.name',
+          description: 'games.rushx.description',
           image: '/assets/game1.jpg',
+          href: '/rushx'
         },
         {
           id: 2,
-          name: 'Game 2',
-          description: 'Explore the unknown.',
+          name: 'games.game2.name',
+          description: 'games.game2.description',
           image: '/assets/game2.jpg',
+          href: '/'
         },
         {
           id: 3,
-          name: 'Game 3',
-          description: 'A journey through time.',
+          name: 'games.game3.name',
+          description: 'games.game3.description',
           image: '/assets/game3.jpg',
-        },
+          href: '/'
+        }
       ],
     };
   },

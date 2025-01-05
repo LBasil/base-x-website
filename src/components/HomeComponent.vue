@@ -2,7 +2,7 @@
   <section id="home" class="home vh-100 d-flex flex-column justify-content-center align-items-center">
     <h1 class="text-center text-glow">{{ $t('home.welcome') }}</h1>
     <p class="text-center lead">{{ $t('home.explore') }}</p>
-    <button class="btn btn-neon mt-4">{{ $t('home.get_started') }}</button>
+    <a class="btn btn-neon mt-4" href="#games">{{ $t('home.get_started') }}</a>
   </section>
   <GamesComponent />
 </template>

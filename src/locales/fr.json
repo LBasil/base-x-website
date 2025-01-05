@@ -15,6 +15,19 @@
     "get_started": "Découvrir"
   },
   "games": {
-    "game_title": "Nos jeux"
+    "game_title": "Nos jeux",
+    "explore": "Explorer",
+    "rushx": {
+      "name": "RushX",
+      "description": "Survivez à l’expérience scientifique ultime."
+    },
+    "game2": {
+      "name": "Jeu 2",
+      "description": "Partez à la conquête de l’inconnu."
+    },
+    "game3": {
+      "name": "Jeu 3",
+      "description": "Une odyssée à travers le temps."
+    }
   }
 }
