@@ -1,5 +1,3 @@
-// RushXComponent.vue: Construit la page dédiée au jeu RushX
-
 <template>
   <div id="rushx-page">
     <HeaderComponent />
@@ -80,8 +78,8 @@ export default {
 
 <style scoped>
 #rushx-page {
-  background-color: #000814;
-  color: #ffffff;
+  background-color: var(--background);
+  color: var(--text-color);
 }
 
 .rushx-hero {
@@ -90,7 +88,7 @@ export default {
 }
 
 .rushx-details img {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 6px var(--background);
 }
 
 .rushx-trailer iframe {

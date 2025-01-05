@@ -20,6 +20,7 @@
           <li><a href="#about" class="nav-link">{{ $t('header.about') }}</a></li>
           <li><a href="#contact" class="nav-link">{{ $t('header.contact') }}</a></li>
           <LanguageSwitcherComponent />
+          <ThemeSwitcherComponent />
         </ul>
       </nav>
     </div>
@@ -29,11 +30,13 @@
 
 <script>
 import LanguageSwitcherComponent from './LanguageSwitcherComponent.vue';
+import ThemeSwitcherComponent from './ThemeSwitcherComponent.vue';
 
 export default {
   name: 'HeaderComponent',
   components: {
-    LanguageSwitcherComponent
+    LanguageSwitcherComponent,
+    ThemeSwitcherComponent
   }
 };
 </script>
@@ -45,17 +48,17 @@ ul {
 }
 
 .header {
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--background);
   backdrop-filter: blur(10px);
   padding: 15px 20px;
   z-index: 999;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  box-shadow: var(--box-shadow);
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: #00d9ff;
+  color: var(--secondary-color);
   animation: neon-blink 1.5s infinite alternate;
 }
 
@@ -70,7 +73,7 @@ ul {
 .navbar-toggler-icon {
   width: 30px;
   height: 3px;
-  background: #00d9ff;
+  background: var(--secondary-color);
   display: block;
   position: relative;
 }
@@ -80,7 +83,7 @@ ul {
   content: "";
   width: 30px;
   height: 3px;
-  background: #00d9ff;
+  background: var(--secondary-color);
   position: absolute;
   transition: transform 0.3s ease-in-out;
 }
@@ -95,15 +98,15 @@ ul {
 
 /* Navbar links */
 .nav-link {
-  color: #ffffff;
+  color: var(--text-color);
   text-transform: uppercase;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 .nav-link:hover {
-  color: #00d9ff;
-  text-shadow: 0 0 5px #00d9ff;
+  color: var(--secondary-color);
+  text-shadow: 0 0 5px var(--secondary-color);
 }
 
 /* Responsive adjustments */
@@ -113,10 +116,10 @@ ul {
 
 .collapse.show {
   display: block; /* Shown when toggled */
-  background: rgba(0, 0, 0, 0.9);
+  background: var(--background);
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 0 10px #00d9ff;
+  box-shadow: 0 0 10px var(--secondary-color);
 }
 
 @media (min-width: 768px) {
@@ -134,10 +137,10 @@ ul {
 
 @keyframes neon-blink {
   0% {
-    text-shadow: 0 0 5px #00d9ff, 0 0 10px #00d9ff;
+    text-shadow: 0 0 5px var(--secondary-color), 0 0 10px var(--secondary-color);
   }
   100% {
-    text-shadow: 0 0 20px #00d9ff, 0 0 40px #00d9ff;
+    text-shadow: 0 0 20px var(--secondary-color), 0 0 40px var(--secondary-color);
   }
 }
 </style>

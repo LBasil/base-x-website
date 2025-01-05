@@ -25,15 +25,16 @@ ul {
 }
 
 .footer {
-  background: #000000;
-  color: #ffffff;
+  background: var(--background);
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
 }
 .footer-link {
-  color: #00d9ff;
+  color: var(--secondary-color);
   text-decoration: none;
   transition: color 0.3s;
 }
 .footer-link:hover {
-  color: #ffffff;
+  color: var(--text-color);
 }
 </style>

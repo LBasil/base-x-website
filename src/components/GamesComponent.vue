@@ -55,20 +55,20 @@ export default {
 
 <style scoped>
 .games {
-  background: #0d1117;
-  color: #ffffff;
+  background: var(--background);
+  color: var(--text-color);
 }
 .game-card {
-  background: rgba(0, 0, 0, 0.7);
-  border: 1px solid #00d9ff;
+  background: var(--background);
+  border: 1px solid var(--secondary-color);
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .game-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px #00d9ff;
+  box-shadow: 0 0 15px var(--secondary-color);
 }
 .game-card h3 {
-  color: #00d9ff;
+  color: var(--secondary-color);
 }
 </style>

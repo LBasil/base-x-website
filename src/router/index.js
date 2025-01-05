@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeComponent from '@/components/HomeComponent.vue'; // Ta page d'accueil
+import HomeComponent from '@/components/HomeComponent.vue';
 import RushXComponent from '@/components/RushXComponent.vue';
 
 const routes = [
-  { path: '/', component: HomeComponent }, // Page d'accueil
-  { path: '/rushx', component: RushXComponent }, // Page RushX
+  { path: '/', component: HomeComponent },
+  { path: '/rushx', component: RushXComponent },
 ];
 
 const router = createRouter({

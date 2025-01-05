@@ -1,0 +1,21 @@
+:root {
+    --background: rgba(0, 0, 0, 0.8);
+    --box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    --secondary-color: #00d9ff;
+    --text-color: #ffffff;
+  }
+  
+  [data-theme="futuristic"] {
+    --background: #000000;
+    --box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    --secondary-color: #00d9ff;
+    --text-color: #ffffff;
+  }
+  
+  [data-theme="light"] {
+    --background: #f2f2f2;
+    --box-shadow: 0 0 20px #051eff;
+    --secondary-color: #051eff;
+    --text-color: black;
+  }
+  
