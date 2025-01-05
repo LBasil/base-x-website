@@ -27,10 +27,10 @@ export default {
   data() {
     return {
       themes: [
-        { code: 'light', label: 'Light Mode', icon: '🌞' },
         { code: 'futuristic', label: 'Futuristic Mode', icon: '🌠' },
+        { code: 'light', label: 'Light Mode', icon: '🌞' },
       ],
-      currentTheme: localStorage.getItem('theme') || 'light'
+      currentTheme: localStorage.getItem('theme') || 'futuristic'
     };
   },
   computed: {
@@ -38,7 +38,7 @@ export default {
       const currentTheme = this.themes.find(
         (theme) => theme.code === this.currentTheme
       );
-      return currentTheme ? currentTheme.label : 'Light Mode';
+      return currentTheme ? currentTheme.label : 'Futuristic Mode';
     },
   },
   mounted() {
