@@ -1,24 +1,18 @@
-# base-x
+# BaseX - site
 
-## Project setup
-```
+Site vitrine du studio BaseX et de ses jeux (RushX). Vue 3, Vue Router et vue-i18n, en français et en anglais, avec thème clair ou sombre.
+
+## Lancer
+
+```bash
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
+npm run serve     # développement
+npm run build     # production
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Structure
+
+- `src/components/` : en-tête, accueil, liste des jeux, page RushX, pied de page, sélecteurs de langue et de thème
+- `src/locales/` : textes `fr.json` et `en.json`
+- `src/router/` : routes
